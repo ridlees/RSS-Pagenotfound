@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>PageNotFound RSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+<style>
+  p, h1{
+    font-family: monospace;
+    letter-spacing: .17em;
+    overflow:hidden;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+    max-width: 200px;
+    text-overflow: ellipsis;
+  }
+
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.input{
+  border-radius: 25px;
+  border: 2px solid gray;
+  padding: 10px;
+  margin: 10px
+}
+#button:hover {background-color: #888B8D}
+#button:active {
+  background-color: #666;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
+</head>
+<body>
+<div class="center">
+<h1> Neoficiální PageNotFound RSS</h1></div>
+
+<div class="center">
+
+  <p> Jednoduchý RSS feed postavený nad webem PageNotFound.</p>
+  </div>
+  <div class="center">
+  <p>
+    Pro Atom navštivte <a href="/atom">/atom</a>
+  </p>
+  <p>
+    Pro RSS navštivte <a href="/rss">/rss</a>
+  </p>
+</div>
+<div class=center>
+  <a href="https://github.com/ridlees">>>autor</a>
+</div>
+
+</body>
+</html>
