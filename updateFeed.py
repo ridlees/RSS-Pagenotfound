@@ -1,5 +1,6 @@
 from feedgen.feed import FeedGenerator
 import get_articles
+import datetime
 fg = FeedGenerator()
 fg.id('test.com')
 fg.title('Unoficial PageNotFound RSS')
@@ -17,4 +18,9 @@ for article in articles:
 atomfeed = fg.atom_str(pretty=True)
 rssfeed  = fg.rss_str(pretty=True)
 fg.atom_file('atom.xml')
-fg.rss_file('rss.xml') 
+fg.rss_file('rss.xml')
+
+
+now = datetime.datetime.now()
+print(f"{now} - fetched")
+    
